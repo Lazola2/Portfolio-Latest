@@ -172,7 +172,6 @@ li.line {
 
     .content-container h1 {
         line-height: 3rem;
-        margin: 0 30px;
     }
     
     .name-surname {
@@ -180,7 +179,7 @@ li.line {
     }
 
     .about-text {
-        text-align: center;
+        padding: 0 3rem;
     }
 
     /* styling buttons */
