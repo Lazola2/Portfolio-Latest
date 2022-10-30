@@ -161,6 +161,8 @@ li.line {
     .content-container {
         margin: 0 auto;
         width: 90% !important;
+        text-align: center;
+        gap: 20px;
     }
 
     .small {
@@ -169,7 +171,7 @@ li.line {
     }
 
     .content-container h1 {
-        line-height: normal;
+        line-height: 3rem;
     }
     
     .name-surname {
@@ -184,10 +186,12 @@ li.line {
     .home-buttons {
         width: 100%;
         align-items: center;
+        font-size: small;
     }
 
     .download-btn, .contact-btn {
-        width: 70% !important;
+        width: 35% !important;
+        border-radius: 5px;
     }
 }
 
