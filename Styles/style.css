@@ -19,7 +19,7 @@ header {
 .toggle-btn {
     font-size: 30px;
     color: var(--buttons-color);
-    
+
 }
 
 .navbar-nav li {
@@ -35,7 +35,9 @@ header {
     color: var(--buttons-color);
     font-size: 30px;
     font-weight: 600;
-    border: 1px solid var(--buttons-color)
+    border: 1px solid var(--buttons-color);
+    animation: rotate 4s;
+    animation-play-state: running;
 }
 
 .navbar-nav li a:hover {
@@ -131,16 +133,63 @@ li.line {
     background: none;
 }
 
-@media screen and (min-width: 400px ) {
-    .content-container h1{
-        font-size: 15px;
-        color: red;
-    }    
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(360deg);
+        scale: 1.2;
+    }
+    50% {
+        transform: rotateY(0deg);
+        scale: 0.2;
+    }
+    75% {
+        scale: 1.4;
+    }
+
+    80% {
+        transform: rotate(360deg);
+        scale: 1;
+        box-shadow: 0 0 50px 5px var(--buttons-color);
+    }
 }
 
+@media screen and (max-width: 500px) {
+    .content-container {
+        margin: 0 auto;
+        width: 90% !important;
+    }
 
+    .small {
+        font-size: 19px;
+        margin-top: 20px;
+    }
 
+    .content-container h1 {
+        line-height: normal;
+    }
+    
+    .name-surname {
+        font-size: 35px !important;
+    }
 
+    .about-text {
+        text-align: center;
+    }
+
+    /* styling buttons */
+    .home-buttons {
+        width: 100%;
+        align-items: center;
+    }
+
+    .download-btn, .contact-btn {
+        width: 70% !important;
+    }
+}
 
 
 
