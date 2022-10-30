@@ -158,6 +158,11 @@ li.line {
 }
 
 @media screen and (max-width: 500px) {
+    .navigation {
+        background: rgba(0, 0, 0, 0.842);
+    }
+
+
     .content-container {
         margin: 0 auto;
         width: 90% !important;
