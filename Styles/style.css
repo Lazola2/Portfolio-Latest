@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .4s ease-in-out;
 }
 
 header {
@@ -18,6 +19,7 @@ header {
 .toggle-btn {
     font-size: 30px;
     color: var(--buttons-color);
+    
 }
 
 .navbar-nav li {
@@ -72,3 +74,74 @@ li.line {
     width: 2px;
     height: 40px;
 }
+
+/* home-page content */
+.content-container {
+    margin-left: 15%;
+    /* border: 1px solid black; */
+}
+
+.content-container h1 {
+    line-height: 6rem;
+}
+
+.small {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.blue-text ,.name-surname::first-letter{
+    color: var(--buttons-color);
+}
+
+.name-surname::first-letter{
+    font-size: 10px;
+}
+
+.name-surname {
+    font-size: 72px;
+}
+
+.home-buttons .contact-btn,
+.home-buttons .download-btn {
+    width: 170px;
+    height: 38px;
+    background: none;
+}
+
+.home-buttons .download-btn {
+    background-color: var(--buttons-color);
+    border: none;
+}
+
+.home-buttons .contact-btn {
+    border: 2px solid var(--buttons-color);
+    color: var(--buttons-color)
+}
+
+.home-buttons .contact-btn:hover {
+    background-color: var(--buttons-color);
+    border: none;
+    color: #000;
+}
+
+.home-buttons .download-btn:hover {
+    border: 2px solid var(--buttons-color);
+    color: var(--buttons-color);
+    background: none;
+}
+
+@media screen and (min-width: 400px ) {
+    .content-container h1{
+        font-size: 15px;
+        color: red;
+    }    
+}
+
+
+
+
+
+
+
+
