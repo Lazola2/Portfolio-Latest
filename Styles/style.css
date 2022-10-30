@@ -163,7 +163,6 @@ li.line {
         width: 100% !important;
     }
 
-
     .content-container {
         margin: 0 auto;
         width: 90% !important;
@@ -199,7 +198,7 @@ li.line {
     .download-btn, .contact-btn {
         width: 30% !important;
         border-radius: 5px;
-        margin: 0 20px;
+        margin: 0 10px;
     }
 }
 
