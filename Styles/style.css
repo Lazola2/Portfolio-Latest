@@ -25,7 +25,7 @@ header {
     font-weight: 400;
 }
 
-.navbar-nav li a {
+.navbar-nav li a, .socials a {
     color: var(--text-color);
 }
 
@@ -64,7 +64,7 @@ a, a:hover {
 }
 
 li:hover {
-    color: #000;
+    /* color: #000; */
     transition: .4s;
 }
 
