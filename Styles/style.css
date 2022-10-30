@@ -37,7 +37,10 @@ header {
     font-weight: 600;
     border: 1px solid var(--buttons-color);
     animation: rotate 4s;
-    animation-play-state: running;
+    -o-animation: rotate 4s;
+    -ms-zoom-animation: rotate 4s;
+    -moz-animation: rotate 4s;
+    -webkit-animation: rotate 4s;
 }
 
 .navbar-nav li a:hover {
