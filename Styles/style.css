@@ -187,10 +187,11 @@ li.line {
         width: 100%;
         align-items: center;
         font-size: small;
+        gap:20px;
     }
 
     .download-btn, .contact-btn {
-        width: 35% !important;
+        width: 30% !important;
         border-radius: 5px;
     }
 }
