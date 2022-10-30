@@ -19,7 +19,6 @@ header {
 .toggle-btn {
     font-size: 30px;
     color: var(--buttons-color);
-
 }
 
 .navbar-nav li {
@@ -143,11 +142,9 @@ li.line {
 
     25% {
         transform: rotateY(360deg);
-        scale: 1.2;
     }
     50% {
         transform: rotateY(0deg);
-        scale: 0.2;
     }
     75% {
         scale: 1.4;
@@ -156,7 +153,6 @@ li.line {
     80% {
         transform: rotate(360deg);
         scale: 1;
-        box-shadow: 0 0 50px 5px var(--buttons-color);
     }
 }
 
