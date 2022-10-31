@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="Styles/style.css">
 </head>
 
-<body style="width: 100vw; height:100vh;">
+<body style="width: 100vw; height:100vh;" class="overflow-hidden">
 	<header class="position-fixed w-100">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
@@ -32,8 +32,8 @@
 				</button>
 				<div class="collapse navbar-collapse navigation" id="navbarNav">
 					<ul class="navbar-nav ms-auto w-50 d-flex justify-content-between me-5">
-						<li class="py-2"><a href="index.html">Home</a></li>
-						<li class="py-2"><a href="about.html">About</a></li>
+						<li class="py-2"><a href="#home-page">Home</a></li>
+						<li class="py-2"><a href="#about-section">About</a></li>
 						<li class="py-2"><a href="resume.html">Resume</a></li>
 						<li class="py-2"><a href="skills.html">Skills</a></li>
 						<li class="py-2"><a href="projects.html">Projects</a></li>
@@ -45,7 +45,8 @@
 		</nav>
 	</header>
 	<main class="w-100 h-100">
-		<div class="socials align-items-end position-fixed text-white h-100 d-flex flex-md-column flex-row align-items-end justify-content-md-center px-3 align-items-md-center">
+		<div
+			class="socials align-items-end position-fixed text-white h-100 d-flex flex-md-column flex-row align-items-end justify-content-md-center px-3 align-items-md-center">
 			<li class="list-unstyled my-1 my-md-2 mx-1 mx-md-2">
 				<a href="https://web.facebook.com/profile.php?id=100004723127357">
 					<i class="bi bi-facebook"></i>
@@ -68,26 +69,68 @@
 			</li>
 			<li class="list-unstyled line bg-white my-2 d-none d-md-block"></li>
 		</div>
-		<section class="home-page d-flex justify-content-center flex-column">
+
+		<!-- home page section -->
+		<section class="home-page d-flex justify-content-center flex-column" id="home-page">
 			<div class="content-container d-flex flex-column w-50 gap-md-1 gap-2">
 				<h1 class="text-white">
-					<span class="small mb-5"> 
-						<span class="blue-text">Hi</span>, I am  
+					<span class="small mb-5">
+						<span class="blue-text">Hi</span>, I am
 					</span>
-					<br> 
-					<span class="name-surname">Lazola Makubalo</span> 
+					<br>
+					<span class="name-surname">Lazola Makubalo</span>
 				</h1>
 				<p class="text-white about-text">
-					I am an aspiring fullstack  developer.
+					I am an aspiring fullstack developer.
 					If you have any project that you need done,
 					don't hesitate to contact me.
 				</p>
-				<div class="home-buttons mt-3 d-flex gap-2 gap-md-4 flex-row justify-content-center justify-content-md-start">
+				<div
+					class="home-buttons mt-3 d-flex gap-2 gap-md-4 flex-row justify-content-center justify-content-md-start">
 					<button class="download-btn">Download CV</button>
 					<button class="contact-btn">Contact Me</button>
 				</div>
 			</div>
-			
+
+		</section>
+
+		<!-- about section -->
+		<section class="about h-100 w-100 d-flex aling-items-center justify-center-center" id="about-section">
+			<div class="about-container container my-auto d-flex flex-column d-md-grid justify-content-center align-items-center">
+				<div class="img-container bg-dark d-none d-md-block">
+					<img src="https://i.postimg.cc/tgqfk7f8/download-1.jpg" class="h-100 w-100 " alt="Lazola Makubalo">
+				</div>
+				<div class="about-content py-md-4 px-md-5 d-flex flex-column justify-content-between align-items-md-start align-items-center gap-md-0 gap-3">
+					<h2 class="display-2">About me</h2>
+					<p class="about-me-paragraph">
+						My name is Laz. I love building projects for the web. Currently, 
+						I am aspiring to be a full stack developer. If you have any projects in mind, don't hesitate to 
+						contact me! 
+					</p>
+					<div class="contacts list-unstyled d-flex flex-column gap-2">
+						<li class="contact-item d-flex gap-3">
+							<i class="bi bi-person"></i>
+							Lazola Makubalo
+						</li>
+						<li class="contact-item d-flex gap-3">
+							<i class="bi bi-telephone-fill"></i>
+							0840728121
+						</li>
+						<li class="contact-item d-flex gap-3">
+							<i class="bi bi-envelope"></i>
+							lazolamakubalo271@gmail.com
+						</li>
+					</div>
+					<div class="interests d-flex flex-column align-items-center align-items-md-start">
+						<h6>Interests</h6>
+						<ul class="d-flex flex-column flex-md-row align-items-center">
+							<li class="me-5">Music</li>
+							<li class="me-5">Drawing</li>
+							<li class="me-5">Reading</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 	</header>

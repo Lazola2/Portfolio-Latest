@@ -1,15 +1,26 @@
-:root{
+:root {
     --text-color: rgb(187, 187, 187);
     --header-color: #2b3f50;
     --buttons-color: #15c0ee;
     --theme-color: #133843;
 }
 
-*,*::after,::before {
+*,
+*::after,
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: .4s ease-in-out;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)),
+        url(https://i.postimg.cc/bY1kMd7T/image.png);
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
 }
 
 header {
@@ -26,7 +37,8 @@ header {
     font-weight: 400;
 }
 
-.navbar-nav li a, .socials a {
+.navbar-nav li a,
+.socials a {
     color: var(--text-color);
 }
 
@@ -58,19 +70,14 @@ header {
 .home-page {
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.7)),
-        url(https://i.postimg.cc/bY1kMd7T/image.png);
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
 }
 
-a, a:hover {
+a,
+a:hover {
     text-decoration: none;
 }
 
 li:hover {
-    /* color: #000; */
     transition: .4s;
 }
 
@@ -94,11 +101,12 @@ li.line {
     margin-top: 50px;
 }
 
-.blue-text ,.name-surname::first-letter{
+.blue-text,
+.name-surname::first-letter {
     color: var(--buttons-color);
 }
 
-.name-surname::first-letter{
+.name-surname::first-letter {
     font-size: 10px;
 }
 
@@ -136,6 +144,59 @@ li.line {
     background: none;
 }
 
+/* Styling the about section */
+.about-container {
+    background-color: rgba(255,255,255, .8);
+    display: grid;
+    grid-template: 10% 80% 10% / 0.4fr 2fr 5fr;
+    width: 60%;
+    height: 70%;
+}
+
+.img-container {
+    grid-column: 2/ span 1;
+    grid-row: 2/ span 1;
+    position: relative;
+    z-index: 1;
+}
+
+.img-container::after {
+    content: '';
+    height: 20%;
+    width: 30%;
+    background-color: var(--buttons-color);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+.img-container::before {
+    content: '';
+    height: 20%;
+    width: 30%;
+    background-color: var(--buttons-color);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.about-content {
+    grid-column: 3/-1;
+    grid-row: 2/3;
+}
+
+.contacts {
+    font-size: smaller;
+    margin-bottom: 1em;
+}
+
+.contact-item:hover i{
+    color: var(--buttons-color);
+    scale: 1.4;
+}
+
 @keyframes rotate {
     0% {
         transform: rotateY(0deg);
@@ -144,9 +205,11 @@ li.line {
     25% {
         transform: rotateY(360deg);
     }
+
     50% {
         transform: rotateY(0deg);
     }
+
     75% {
         scale: 1.4;
     }
@@ -178,7 +241,7 @@ li.line {
     .content-container h1 {
         line-height: 3rem;
     }
-    
+
     .name-surname {
         font-size: 30px !important;
     }
@@ -193,16 +256,58 @@ li.line {
         width: 100%;
         align-items: center;
         font-size: small;
-        gap:5px;
+        gap: 5px;
     }
 
-    .download-btn, .contact-btn {
+    .download-btn,
+    .contact-btn {
         width: 30% !important;
         border-radius: 5px;
         margin: 0 5px;
     }
+
+    /* STYLING THE ABOUT PAGE FOR SMALLER DEVICE WIDTHS */
+    .about-container {
+       display: flex;
+       align-items: center;
+       height: 75%;
+       width: 80%;
+       gap:3rem;
+       margin-top: 30%;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .img-container {
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .img-container::before, .img-container::after {
+        display: none;
+    }
+
+    .about-me-paragraph {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    .interests {
+        width: 100%;
+    }
+
+    .interests ul {
+        font-size: smaller;
+        list-style: none;
+        
+    }
+
+
+
+
+
 }
-
-
-
-
