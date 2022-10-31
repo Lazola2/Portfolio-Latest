@@ -146,7 +146,7 @@ li.line {
 
 /* Styling the about section */
 .about-container {
-    background-color: rgba(255,255,255, .8);
+    background-color: rgba(255, 255, 255, .8);
     display: grid;
     grid-template: 10% 80% 10% / 0.4fr 2fr 5fr;
     width: 60%;
@@ -192,10 +192,51 @@ li.line {
     margin-bottom: 1em;
 }
 
-.contact-item:hover i{
+.contact-item:hover i {
     color: var(--buttons-color);
     scale: 1.4;
 }
+
+/* RESUME SECTION */
+.resume-container {
+    background-color: rgba(255, 255, 255, .8);
+    width: 60%;
+    height: 70%;
+    position: relative;
+}
+
+.resume-container h2 {
+    color: var(--buttons-color);
+    text-shadow: 0px 0px 2px #000;
+}
+
+.education-grid .blocks {
+    position: relative;
+}
+
+.education-grid .blocks::after {
+    content:'';
+    height: 80%;
+    background: var(--buttons-color);
+    /* box-shadow: 0 0 2px 5px #000; */
+    width: 5px;
+    position: absolute;
+    left: 15%;
+}
+
+.education-grid .blocks::before {
+    content:'';
+    height: 20px;
+    top: 0%;
+    background: var(--buttons-color);
+    /* text-shadow: 0 0 1px #000; */
+    width: 20px;
+    position: absolute;
+    left: 13.15%;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
 
 @keyframes rotate {
     0% {
@@ -268,12 +309,12 @@ li.line {
 
     /* STYLING THE ABOUT PAGE FOR SMALLER DEVICE WIDTHS */
     .about-container {
-       display: flex;
-       align-items: center;
-       height: 75%;
-       width: 80%;
-       gap:3rem;
-       margin-top: 30%;
+        display: flex;
+        align-items: center;
+        height: 75%;
+        width: 80%;
+        gap: 3rem;
+        margin-top: 30%;
     }
 
     .about-content {
@@ -287,7 +328,8 @@ li.line {
         z-index: 0;
     }
 
-    .img-container::before, .img-container::after {
+    .img-container::before,
+    .img-container::after {
         display: none;
     }
 
@@ -303,11 +345,6 @@ li.line {
     .interests ul {
         font-size: smaller;
         list-style: none;
-        
+
     }
-
-
-
-
-
 }

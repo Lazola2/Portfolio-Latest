@@ -27,14 +27,14 @@
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<i class="bi bi-list navbar-toggler-icon toggle-btn"></i>
+					<i class="bi bi-list toggle-btn"></i>
 					<!-- <span class="navbar-toggler-icon toggle-btn"></span> -->
 				</button>
 				<div class="collapse navbar-collapse navigation" id="navbarNav">
 					<ul class="navbar-nav ms-auto w-50 d-flex justify-content-between me-5">
 						<li class="py-2"><a href="#home-page">Home</a></li>
 						<li class="py-2"><a href="#about-section">About</a></li>
-						<li class="py-2"><a href="resume.html">Resume</a></li>
+						<li class="py-2"><a href="#resume">Resume</a></li>
 						<li class="py-2"><a href="skills.html">Skills</a></li>
 						<li class="py-2"><a href="projects.html">Projects</a></li>
 						<li class="py-2"><a href="testimonials.html">Testimonials</a></li>
@@ -96,16 +96,18 @@
 
 		<!-- about section -->
 		<section class="about h-100 w-100 d-flex aling-items-center justify-center-center" id="about-section">
-			<div class="about-container container my-auto d-flex flex-column d-md-grid justify-content-center align-items-center">
+			<div
+				class="about-container container my-auto d-flex flex-column d-md-grid justify-content-center align-items-center">
 				<div class="img-container bg-dark d-none d-md-block">
 					<img src="https://i.postimg.cc/tgqfk7f8/download-1.jpg" class="h-100 w-100 " alt="Lazola Makubalo">
 				</div>
-				<div class="about-content py-md-4 px-md-5 d-flex flex-column justify-content-between align-items-md-start align-items-center gap-md-0 gap-3">
-					<h2 class="display-2">About me</h2>
+				<div
+					class="about-content py-md-4 px-md-5 d-flex flex-column justify-content-between align-items-md-start align-items-center gap-md-4 gap-3">
+					<h5 class="display-5">About me</h5>
 					<p class="about-me-paragraph">
-						My name is Laz. I love building projects for the web. Currently, 
-						I am aspiring to be a full stack developer. If you have any projects in mind, don't hesitate to 
-						contact me! 
+						I build projects for the web. Currently,
+						I am aspiring to be a full stack developer. If you have any projects in mind, don't hesitate to
+						contact me!
 					</p>
 					<div class="contacts list-unstyled d-flex flex-column gap-2">
 						<li class="contact-item d-flex gap-3">
@@ -132,8 +134,52 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- resume section -->
+		<section class="resume w-100 h-100 d-flex align-items-center justify-content-center" id="resume">
+			<div class="resume-container container d-flex align-items-center justify-content-center flex-column">
+				<p>My Qualification</p>
+				<h2>
+					<i class="bi bi-mortarboard-fill"></i>
+					Education
+				</h2>
+				<div class="d-flex align-items-center education-grid row w-100 h-75 list-unstyled">
+					<li class="blocks col-6 d-flex flex-column align-items-center ">
+						<p class="fw-bold">2018 Information Technology</p>
+						<ul>
+							<li>Fundamentals of Computing</li>
+							<li>Introduction to programming</li>
+						</ul>
+					</li>
+					<li class="blocks col-6 d-flex flex-column align-items-center ">
+						<p class="fw-bold">2019 Information Technology</p>
+						<ul>
+							<li>Text file manipulation</li>
+							<li>Relational database</li>
+						</ul>
+					</li>
+					<li class="blocks col-6 d-flex flex-column align-items-center ">
+						<p class="fw-bold">2020 Information Technology</p>
+						<ul>
+							<li>Object orientated programming</li>
+							<li>SQL (Structured Query Language)</li>
+						</ul>
+					</li>
+					<li class="blocks col-6 d-flex flex-column align-items-center">
+						<p class="fw-bold">2021 - 2022 Information Technology</p>
+						<ul>
+							<li>Introduction to Python</li>
+							<li>Introduction to Python</li>
+							<li>Computer Science Fundamentals</li>
+							<li>Data Structures and Algorithms in Java</li>
+						</ul>
+					</li>
+
+				</div>
+			</div>
+		</section>
+
 	</main>
-	</header>
 </body>
 
 </html>
