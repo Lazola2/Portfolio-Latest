@@ -237,6 +237,92 @@ li.line {
     border-radius: 50%;
 }
 
+.animation-container {
+    z-index:-2;
+}
+
+.graduation-hat {
+    font-size: 30px;
+    animation: 5s linear infinite fall;
+    position: relative;
+    transition: 5s;
+}
+
+.graduation-hat:nth-child(1){
+    animation-delay: .1322s;
+}
+.graduation-hat:nth-child(2){
+    animation-delay: .72s;
+}
+.graduation-hat:nth-child(3){
+    animation-delay: .22s;
+}
+.graduation-hat:nth-child(4){
+    animation-delay: .34s;
+}
+.graduation-hat:nth-child(5){
+    animation-delay: .4s;
+}
+.graduation-hat:nth-child(6){
+    animation-delay: .6s;
+}
+
+.graduation-hat:nth-child(7){
+    animation-delay: .9s;
+}
+.graduation-hat:nth-child(8){
+    animation-delay: .1s;
+}
+.graduation-hat:nth-child(9){
+    animation-delay: 2s;
+}
+.graduation-hat:nth-child(10){
+    animation-delay: .2s;
+}
+
+.graduation-hat:nth-child(11){
+    animation-delay: .122s;
+}
+.graduation-hat:nth-child(12){
+    animation-delay: .52s;
+}
+.graduation-hat:nth-child(13){
+    animation-delay: .2562s;
+}
+.graduation-hat:nth-child(14){
+    animation-delay: .3433253s;
+}
+.graduation-hat:nth-child(15){
+    animation-delay: .434221s;
+}
+.graduation-hat:nth-child(16){
+    animation-delay: .1314126s;
+}
+
+.graduation-hat:nth-child(17){
+    animation-delay: .1312311259s;
+}
+.graduation-hat:nth-child(18){
+    animation-delay: .86856741s;
+}
+.graduation-hat:nth-child(19){
+    animation-delay: 2s;
+}
+.graduation-hat:nth-child(20){
+    animation-delay: .2s;
+}
+
+@keyframes fall {
+    0%{
+        top: 0%;
+    }
+
+    100%{
+        top: 100%;
+    }
+
+}
+
 
 @keyframes rotate {
     0% {
