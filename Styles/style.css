@@ -332,6 +332,10 @@ li.line {
         margin-bottom: 5px;
     }
 
+    .contact-item i{
+        margin-right: 5px;
+    }
+
     .img-container {
         width: 5em;
         height: 5em;
