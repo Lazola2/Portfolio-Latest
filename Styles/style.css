@@ -1,6 +1,7 @@
 :root {
     --text-color: rgb(187, 187, 187);
     --theme-color: #5ac017;
+    --hover-btn-color: #5bc01786;
 }
 
 .social-links .a i:hover {
@@ -147,7 +148,7 @@ li.line {
 }
 
 .home-buttons .contact-btn:hover {
-    background-color: var(--theme-color);
+    background-color: var(--hover-btn-color);
     border: none;
     color: #000;
 }
@@ -253,6 +254,26 @@ li.line {
     /* z-index: 1000; */
     border-radius: 50%;
 }
+
+.skills-container {
+    background-color: rgba(255, 255, 255, .8);
+    width: 60%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.6fr 5fr;
+}
+
+.skills-container .sub-heading {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+.skills-container .heading {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+
 
 @keyframes rotate {
     0% {
