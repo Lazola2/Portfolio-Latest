@@ -328,6 +328,10 @@ li.line {
         width: 100%;
     }
 
+    .contact-item {
+        margin-bottom: 20px;
+    }
+
     .img-container {
         width: 5em;
         height: 5em;
