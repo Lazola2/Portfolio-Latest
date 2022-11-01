@@ -386,6 +386,7 @@ li.line {
         border-radius: 5px;
         padding: 20px 5px;
         position: static;
+        margin-bottom: 20px;
     }
 
     .education-grid .blocks ul {
