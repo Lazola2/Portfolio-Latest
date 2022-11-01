@@ -395,12 +395,10 @@ li.line {
 
     .education-grid .blocks ul li {
         list-style: none;
-
     }
 
     .blocks::after, .blocks::before{
         display:none;
     }
-
-
+    
 }
