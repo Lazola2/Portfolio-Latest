@@ -1,6 +1,6 @@
 :root {
     --text-color: rgb(187, 187, 187);
-    --theme-color: #5ac017;
+    --theme-color: #6ca60e;
     --hover-btn-color: #5bc01786;
 }
 
@@ -8,9 +8,14 @@
     color: var(--theme-color);
 }
 
-.active {
+.use-theme{
     color: var(--theme-color);
 }
+
+.bg-use-theme {
+    background-color: var(--theme-color);
+}
+
 
 *,
 *::after,
@@ -60,7 +65,7 @@ header {
 .logo {
     color: var(--theme-color);
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 600;   /*try to use bootstrap on this one*/
     border: 1px solid var(--theme-color);
     animation: rotate 4s;
     -o-animation: rotate 4s;
@@ -75,7 +80,7 @@ header {
 
 .socials li {
     color: var(--text-color);
-    font-size: larger;
+    font-size: larger; /*try to use bootstrap on this one*/
 }
 
 .socials li:hover {
@@ -83,8 +88,8 @@ header {
 }
 
 .home-page {
-    height: 100%;
-    width: 100%;
+    height: 100%; /*try to use bootstrap on this one*/
+    width: 100%; /*try to use bootstrap on this one*/
 }
 
 a,
@@ -134,12 +139,12 @@ li.line {
 .home-buttons .download-btn {
     width: 170px;
     height: 38px;
-    background: none;
+    background: none; /*try to use bootstrap on this one*/
 }
 
 .home-buttons .download-btn {
     background-color: var(--theme-color);
-    border: none;
+    border: none; /*try to use bootstrap on this one*/
 }
 
 .home-buttons .contact-btn {
@@ -149,7 +154,7 @@ li.line {
 
 .home-buttons .contact-btn:hover {
     background-color: var(--hover-btn-color);
-    border: none;
+    border: none; 
     color: #000;
 }
 
@@ -180,7 +185,7 @@ li.line {
     height: 20%;
     width: 30%;
     background-color: var(--theme-color);
-    position: absolute;
+    position: absolute; /*try to use bootstrap on this one*/
     right: -5px;
     top: -5px;
     z-index: -1;
@@ -191,7 +196,7 @@ li.line {
     height: 20%;
     width: 30%;
     background-color: var(--theme-color);
-    position: absolute;
+    position: absolute; /*try to use bootstrap on this one*/
     left: -5px;
     bottom: -5px;
     z-index: -1;
@@ -203,7 +208,7 @@ li.line {
 }
 
 .contacts {
-    font-size: smaller;
+    font-size: smaller;  /*try to use bootstrap on this one*/
     margin-bottom: 1em;
 }
 
@@ -217,7 +222,7 @@ li.line {
     background-color: rgba(255, 255, 255, .8);
     width: 60%;
     height: 70%;
-    position: relative;
+    position: relative; /*try to use bootstrap on this one*/
 }
 
 .resume-subheading {
@@ -225,12 +230,12 @@ li.line {
 }
 
 .resume-container h2 {
-    color: black;
+    color: black; /*try to use bootstrap on this one*/
     font-weight: 100;
 }
 
 .education-grid .blocks {
-    position: relative;
+    position: relative; /*try to use bootstrap on this one*/
 }
 
 .education-grid .blocks::after {
@@ -258,11 +263,11 @@ li.line {
 .skills-container {
     background-color: rgba(255, 255, 255, .8);
     width: 60%;
-    height: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.6fr 5fr;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .skills-container .sub-heading {
     grid-column: 1/-1;
@@ -272,6 +277,21 @@ li.line {
 .skills-container .heading {
     grid-column: 1/-1;
     grid-row: 2/3;
+}
+
+/* styling the progress bar */
+.progress {
+    height: 10px;
+}
+
+.progress-heading {
+    font-size: small;
+    font-weight: 600;
+}
+
+.progress-bar {
+    background-color: var(--theme-color);
+    border-radius: 8px;
 }
 
 
@@ -439,6 +459,22 @@ li.line {
 
     .blocks::after, .blocks::before{
         display:none;
+    }
+
+    /* styling the skills section for mobile devices */
+    .skills-container {
+        background-color: rgba(255, 255, 255, .8);
+        width: 80% !important;
+        height: 75% !important;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        padding: 0px !important;
+    }  
+
+    .progress {
+        margin: 1rem 0;
+        width: 100% !important;
     }
     
 }
