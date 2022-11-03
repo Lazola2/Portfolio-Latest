@@ -112,15 +112,15 @@
 						contact me!
 					</p>
 					<div class="contacts list-unstyled d-flex flex-column gap-2">
-						<li class="contact-item d-flex gap-3">
+						<li class="contact-item d-flex gap-sm-3 flex-column flex-sm-row align-items-center">
 							<i class="bi bi-person"></i>
 							Lazola Makubalo
 						</li>
-						<li class="contact-item d-flex gap-3">
+						<li class="contact-item d-flex gap-sm-3 flex-column flex-sm-row align-items-center">
 							<i class="bi bi-telephone-fill"></i>
 							0840728121
 						</li>
-						<li class="contact-item d-flex gap-3">
+						<li class="contact-item d-flex gap-sm-3 align-items-center flex-column flex-sm-row">
 							<i class="bi bi-envelope"></i>
 							lazolamakubalo271@gmail.com
 						</li>
@@ -195,10 +195,11 @@
 				</div>
 
 				<!-- technical skills section -->
-				<div class="soft-container text-center fs-5 px-5 d-flex flex-column align-items-center justify-content-center">
-					<span class="wrapper d-flex flex-row flex-wrap h-75 justify-content-between">
+				<div
+					class="soft-container text-center fs-5 px-md-5 px-0 d-flex flex-column flexalign-items-center ">
+					<span class="wrapper d-flex flex-md-row flex-column flex-md-wrap  justify-content-between">
 						<!-- soft skills -->
-						<div class="html-container language w-50  p-4">
+						<div class="soft-skills bg- language w-50  p-sm-4 py-2 py-sm-3 px-3 px-sm-5">
 							<!-- progress heading -->
 							<div class="progress-heading d-flex justify-content-between">
 								<span>SOFT SKILLS (IN PROGRESS)</span>
@@ -211,9 +212,9 @@
 									aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
-						
+
 						<!-- html -->
-						<div class="html-container language w-50 p-4">
+						<div class="html-container language w-50 p-sm-4 py-2 py-sm-3 px-3 px-sm-5">
 							<!-- progress heading -->
 							<div class="progress-heading d-flex justify-content-between">
 								<span>HTML</span>
@@ -228,7 +229,7 @@
 						</div>
 
 						<!-- css -->
-						<div class="css-container language w-50  p-4">
+						<div class="css-container language w-50 p-sm-4 py-2 py-sm-3 px-3 px-sm-5">
 							<!-- progress bar heading -->
 							<div class="progress-heading d-flex justify-content-between">
 								<span>CSS</span>
@@ -243,7 +244,7 @@
 						</div>
 
 						<!-- bootstrap -->
-						<div class="bootstrap-container language w-50 p-4">
+						<div class="bootstrap-container language w-50 p-sm-4 py-2 py-sm-3 px-3 px-sm-5">
 							<!-- progress bar heading -->
 							<div class="progress-heading d-flex justify-content-between">
 								<span>BOOTSTRAP</span>
@@ -259,7 +260,7 @@
 						</div>
 
 						<!-- javascript -->
-						<div class="javascript-container language w-50 p-4">
+						<div class="javascript-container language w-50 p-sm-4 py-2 py-sm-3 px-3 px-sm-5">
 							<!-- progress heading -->
 							<div class="progress-heading d-flex justify-content-between">
 								<span>JAVASCRIPT</span>
@@ -275,7 +276,7 @@
 						</div>
 
 						<!-- react js -->
-						<div class="reactjs-container language w-50 p-4">
+						<div class="reactjs-container language w-50 p-sm-4 py-2 py-sm-3 px-3 px-sm-5">
 							<!-- progress heading -->
 							<div class="progress-heading  d-flex justify-content-between">
 								<span>REACT JS</span>
@@ -291,7 +292,7 @@
 						</div>
 
 						<!-- java -->
-						<div class="java-container language w-50 p-4">
+						<div class="java-container language w-50 p-sm-4 py-2 py-sm-3 px-3 px-sm-5">
 							<!-- progress heading -->
 							<div class="progress-heading d-flex justify-content-between">
 								<span>JAVA</span>
@@ -305,7 +306,7 @@
 						</div>
 
 						<!-- python -->
-						<div class="java-container language w-50 p-4">
+						<div class="python-container language w-50 p-sm-4 py-2 py-sm-3 px-3 px-sm-5">
 							<!-- progress heading -->
 							<div class="progress-heading d-flex justify-content-between">
 								<span>PYTHON</span>
@@ -326,11 +327,14 @@
 		<!-- projects section -->
 		<section class="projects w-100 h-100 d-flex align-items-center justify-content-center" id="projects">
 			<div class="projects-container container d-flex align-items-center justify-content-center flex-column">
-				<div class="carousel-container h-75 w-75 rounded-3 d-flex">
+				<h2 class="mb-4 use-theme">Projects</h2>
+				<!-- carousel -->
+				<div class="carousel-container h-75 w-75 d-md-flex ">
+					<!-- project 1 -->
 					<div class="project-1 projects h-100 w-100" id="project-1">
 						<span class="buttons-container">
 							<button class="btn btn-dark rounded-1">
-								<a href="https://github.com/Lazola2">
+								<a href="https://github.com/Lazola2/Portfolio-Latest">
 									<i class="bi bi-github me-2"></i>
 									Github
 								</a>
@@ -343,11 +347,65 @@
 							</button>
 						</span>
 					</div>
-					<div class="project-2 projects h-100 w-100 bg-dark" id="project-2"></div>
-					<div class="project-3 projects h-100 w-100 bg-primary" id="project-3"></div>
-					<div class="project-4 projects h-100 w-100 bg-info" id="project-4"></div>
+
+					<!-- project 2 -->
+					<div class="project-2 projects h-100 w-100" id="project-2">
+						<span class="buttons-container">
+							<button class="btn btn-dark rounded-1">
+								<a href="https://github.com/Lazola2/E-Commerce-Site">
+									<i class="bi bi-github me-2"></i>
+									Github
+								</a>
+							</button>
+							<button class="btn btn-danger rounded-1">
+								<a href="https://lazola-portfolio.netlify.app">
+									<i class="bi bi-globe me-2"></i>
+									Live
+								</a>
+							</button>
+						</span>
+					</div>
+
+					<!-- project 3 -->
+					<div class="project-3 projects h-100 w-100" id="project-3">
+						<span class="buttons-container">
+							<button class="btn btn-dark rounded-1">
+								<a href="https://github.com/Lazola2/LCDashboard">
+									<i class="bi bi-github me-2"></i>
+									Github
+								</a>
+							</button>
+							<button class="btn btn-danger rounded-1">
+								<a href="https://lazola-portfolio.netlify.app">
+									<i class="bi bi-globe me-2"></i>
+									Live
+								</a>
+							</button>
+						</span>
+					</div>
+
+					<!-- project 4 -->
+					<div class="project-4 projects h-100 w-100" id="project-4">
+						<span class="buttons-container">
+							<button class="btn btn-dark rounded-1">
+								<a href="https://github.com/Lazola2/Portfolio-Mobile_version_skeleton">
+									<i class="bi bi-github me-2"></i>
+									Github
+								</a>
+							</button>
+							<button class="btn btn-danger rounded-1">
+								<a href="https://lazola-mobile-portfolio.netlify.app/">
+									<i class="bi bi-globe me-2"></i>
+									Live
+								</a>
+							</button>
+						</span>
+					</div>
+
 				</div>
-				<div class="button-container w-50">
+
+				<!-- carousel buttons -->
+				<div class="button-container mt-3 w-50">
 					<a href="#project-1">
 						<button class="buttons project-1-btn rounded-circle"></button>
 					</a>

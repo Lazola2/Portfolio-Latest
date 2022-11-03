@@ -305,7 +305,7 @@ li.line {
 
 .projects-container .button-container {     
     width: 60%;
-    height: 10%;
+    height: 5%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -324,6 +324,8 @@ li.line {
     transition: .3s;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    position: relative;
+    box-shadow: 0 0 5px 0px black;
 }
 
 .projects-container .carousel-container .projects {
@@ -331,25 +333,42 @@ li.line {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    z-index: 1;
 }
 
+/* project 1 */
 .carousel-container .project-1{
     background:
-        linear-gradient(to top, rgba(0,0,0,.4),rgba(0,0,0,.4)), 
+         
         url(https://i.postimg.cc/7Yg0kH8N/Project-1.png);
     background-size: cover;
+    background-position: center;
 }
 
-.carousel-container .project-1{
-    
+/* project 2 */
+.carousel-container .project-2{
+    background:
+     
+        url(https://i.postimg.cc/R0XFcTNW/Project-2.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.carousel-container .project-1{
-    
+/* project 3 */
+.carousel-container .project-3{
+    background:
+        linear-gradient(to top, rgba(0,0,0,.7) ,rgba(0,0,0,.4)), 
+        url(https://i.postimg.cc/3w9D1vtc/Project-3.png);
+    background-size: cover;
+    background-position: 0%;
 }
 
-.carousel-container .project-1{
-    
+/* project 4 */
+.carousel-container .project-4{
+    background:
+        linear-gradient(to top, rgba(0,0,0,.9),rgba(0,0,0,.4)), 
+        url(https://i.postimg.cc/DZNrnGkM/Project-4.png);
+    background-size: cover;
 }
 
 .projects .buttons-container {
@@ -376,22 +395,6 @@ li.line {
     border-radius: 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes rotate {
     0% {
         transform: rotateY(0deg);
@@ -412,6 +415,63 @@ li.line {
     80% {
         transform: rotate(360deg);
         scale: 1;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .blocks p {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    /* styling the resume section */
+    .blocks::after, .blocks::before {
+      display: none;
+    }
+
+    .resume-container {
+        gap: 20px;
+        align-items: flex-start;
+        padding: 3rem;
+        overflow-y: auto;
+    }
+
+    /* skills section */
+    .soft-container {
+        padding: 0 auto !important;
+    }
+
+    .language {
+        width: 100% !important;
+    }
+
+    .skills-container {
+        overflow-y: auto;
+    }
+    
+
+    /* projects section */
+    .projects-container {     
+        background-color: rgba(255, 255, 255, .8);
+        width: 100% !important;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .projects-container .carousel-container {     
+        background-color: rgba(255, 255, 255, .8);
+        width: 100% !important;
+        height: 100% !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-container .projects-container {
+        height: 100% !important;
     }
 }
 
@@ -573,5 +633,49 @@ li.line {
         margin: 1rem 0;
         width: 100% !important;
     }
+
+    .soft-container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .language {
+        margin: 0;
+    }
+   
+}
+
+@media screen and (max-width: 768px){
+    /* Projects */
+    #projects .carousel-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projects-container {
+        box-shadow: 0 0 5px 0 black;
+    }
+
+    #projects .carousel-container {
+        display: flex;
+        flex-direction: row;
+        background-position: center;
+        object-fit: cover;
+    }
+
+    .carousel-container .projects{
+        background-position: 0;
+    }
+
+    .buttons-container {
+        width: 70% !important;
+    }
     
+
 }
