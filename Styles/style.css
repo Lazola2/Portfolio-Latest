@@ -294,6 +294,102 @@ li.line {
     border-radius: 8px;
 }
 
+/* styling the projects section */
+.projects-container {     
+    background-color: rgba(255, 255, 255, .8);
+    width: 60%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container .button-container {     
+    width: 60%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5%;
+}
+
+.projects-container .button-container .buttons{     
+    background-color: rgba(39, 38, 38, 0.8);
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.projects-container .carousel-container {
+    overflow: auto;
+    transition: .3s;
+    scroll-behavior: smooth;
+}
+
+.projects-container .carousel-container .projects {
+    min-width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.carousel-container .project-1{
+    background:
+        linear-gradient(to top, rgba(0,0,0,.4),rgba(0,0,0,.4)), 
+        url(https://i.postimg.cc/7Yg0kH8N/Project-1.png);
+    background-size: cover;
+}
+
+.carousel-container .project-1{
+    
+}
+
+.carousel-container .project-1{
+    
+}
+
+.carousel-container .project-1{
+    
+}
+
+.projects .buttons-container {
+    display: block;
+    height: 40px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.projects .buttons-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.projects .buttons-container button {
+    height: 80%;
+    font-size: 17px;
+    width: 150px;
+    line-height: 0;
+    font-weight: 600;
+    border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes rotate {
     0% {
