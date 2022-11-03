@@ -322,6 +322,7 @@ li.line {
 .projects-container .carousel-container {
     overflow: auto;
     transition: .3s;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
