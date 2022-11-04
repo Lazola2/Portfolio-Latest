@@ -430,6 +430,47 @@ textarea {
     max-height: 60%;
 }
 
+/* Styling the testimonials section */
+.testimonials-container {
+    border: 2px solid var(--theme-color);
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.testimonial-items {
+    height: 24%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.testimonial-items img {
+    height: 80%;
+    min-width: 100px;
+    object-fit: cover;
+    box-shadow: 0 0 5px 0px black;
+    border-radius: 50%;
+}
+
+.testimonial-items .content p {
+    font-size: 13px;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes rotate {
     0% {
         transform: rotateY(0deg);
@@ -456,6 +497,52 @@ textarea {
 @media screen and (max-width: 360px) {
     .blocks p {
         width: 80%;
+    }
+
+    /* styling the contact for small devices section */
+    .contact-container {
+        width: 100% !important;
+        height: 80%;
+        border-radius: 0 !important;
+        margin-top: 3rem;
+    }
+
+    .contact-container form {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .contact-container form label{
+        margin-top: 10px;
+    }
+
+    .contact-container form button{
+        margin: 20px 0;
+    }
+
+    /* styling the testimonial section */
+    .testimonials-container {
+        width: 100% !important;
+        padding: 20px 0 !important;
+        border: none;
+        height: 80% !important;
+        margin-top: 2rem;
+    }
+
+    .testimonial-items img {
+        height: 80%;
+        min-width: 80px;
+        object-fit: cover;
+        box-shadow: 0 0 5px 0px black;
+        border-radius: 0 !important;
+    }
+        
+    .testimonial-items .content p {
+        font-size: 12px;
+        width: 100%;
     }
 }
 
@@ -484,7 +571,6 @@ textarea {
     .skills-container {
         overflow-y: auto;
     }
-    
 
     /* projects section */
     .projects-container {     
@@ -507,6 +593,31 @@ textarea {
     .carousel-container .projects-container {
         height: 100% !important;
     }
+
+    /* styling the contact section */
+    .contact-container {
+        width: 50%;
+        height: 80%;
+    }
+
+    .contact-container form {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .contact-container form label{
+        margin-top: 10px;
+    }
+
+    .contact-container form button{
+        margin: 20px 0;
+    }
+
+    /* styling the testimonials section */
+    
 }
 
 @media screen and (max-width: 500px) {
