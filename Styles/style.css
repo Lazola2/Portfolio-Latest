@@ -16,7 +16,6 @@
     background-color: var(--theme-color);
 }
 
-
 *,
 *::after,
 ::before {
@@ -61,7 +60,7 @@ header {
 .socials a:hover {
     color: var(--theme-color);
 }
-1
+
 .logo {
     color: var(--theme-color);
     font-size: 30px;
