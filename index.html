@@ -21,6 +21,7 @@
 </head>
 
 <body style="width: 100vw; height:100vh;" class="overflow-hidden">
+	<!-- header with navbar -->
 	<header class="position-fixed w-100">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
@@ -39,14 +40,15 @@
 						<li class="py-2"><a href="#resume">Resume</a></li>
 						<li class="py-2"><a href="#skills">Skills</a></li>
 						<li class="py-2"><a href="#projects">Projects</a></li>
-						<li class="py-2"><a href="testimonials.html">Testimonials</a></li>
-						<li class="py-2"><a href="contact.html">Contact</a></li>
+						<li class="py-2"><a href="#testimonials">Testimonials</a></li>
+						<li class="py-2"><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
 	<main class="w-100 h-100">
+		<!-- social icons -->
 		<div
 			class="socials align-items-end position-fixed text-white h-100 d-flex flex-md-column flex-row align-items-end justify-content-md-center px-3 align-items-md-center">
 			<li class="list-unstyled my-1 my-md-2 mx-1 mx-md-2">
@@ -195,8 +197,7 @@
 				</div>
 
 				<!-- technical skills section -->
-				<div
-					class="soft-container text-center fs-5 px-md-5 px-0 d-flex flex-column flexalign-items-center ">
+				<div class="soft-container text-center fs-5 px-md-5 px-0 d-flex flex-column flexalign-items-center ">
 					<span class="wrapper d-flex flex-md-row flex-column flex-md-wrap mt-md-5  justify-content-between">
 						<!-- soft skills -->
 						<div class="soft-skills bg- language w-50  p-sm-4 py-2 py-sm-3 px-3 px-sm-5">
@@ -422,6 +423,52 @@
 			</div>
 		</section>
 
+		<!-- testimonials section -->
+		<section class="testimonials w-100 h-100 bg-danger d-flex align-items-center justify-content-center"
+			id="testimonials">
+			<div class="tesitmonials-container bg-white h-75 w-75 d-flex align-items-center justify-content-center">
+				<h1>Testimonials</h1>
+			</div>
+		</section>
+
+		<!-- contact section -->
+		<section class="contact-section w-100 h-100 d-flex align-items-center justify-content-center"
+			id="contact">
+			<div class="contact-container rounded-1 bg-white p-4">
+				<h2 class="text-center use-theme fs-1">Contact Me</h2>
+				<form	action="https://formspree.io/f/xyyvbajz" method="POST" 
+					class="contact-form w-100 d-flex flex-column d-flex justify-content-center gap-md-3 my-md-4 px-md-3">
+					<!-- name -->
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="eg.  John" required>
+					</div>
+
+					<!-- surname -->
+					<div class="form-group">
+						<label for="surname">Surname</label>
+						<input type="text" class="form-control" id="surname" name="surname" placeholder="eg.  Bruce" required>
+					</div>
+
+					<!-- email -->
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+							placeholder="eg.  johnbruce123@gmail.com" required>
+						<small id="emailHelp" class="form-text text-muted">I will never share your email with anyone
+							else.</small>
+					</div>
+
+					<!-- message -->
+					<div class="form-group">
+						<label for="exampleInputEmail1">Message</label>
+						<textarea name="message" id="message" class="form-control" rows="3" placeholder="message..." required></textarea>
+					</div>
+
+					<button type="submit" class="btn btn-send-form">Send</button>
+				</form>
+			</div>
+		</section>
 	</main>
 </body>
 

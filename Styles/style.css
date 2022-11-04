@@ -394,6 +394,42 @@ li.line {
     border-radius: 0px;
 }
 
+/* styling the contact section */
+.contact-container {
+    background-color: rgba(255, 255, 255, .8);
+    width: 30%;
+    /* height: 75%; */
+}
+
+.btn-send-form {
+    background-color: var(--theme-color);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-send-form:hover {
+    background-color: #4d7809;
+    color: white;
+    font-weight: 600;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-form {
+    max-height: 60vh;
+}
+
+.contact-container h2{
+    font-weight: 100;
+    font-size: small;
+}
+
+.contact-form form {
+    max-height: 60%;
+}
+
 @keyframes rotate {
     0% {
         transform: rotateY(0deg);
