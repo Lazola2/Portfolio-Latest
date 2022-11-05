@@ -450,6 +450,7 @@ textarea {
     object-fit: cover;
     box-shadow: 0 0 5px 0px black;
     border-radius: 50%;
+    object-position: top;
 }
 
 .testimonial-items .content p {
@@ -494,7 +495,7 @@ textarea {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 450px) {
     .blocks p {
         width: 80%;
     }
@@ -532,9 +533,14 @@ textarea {
         margin-top: 2rem;
     }
 
+    .testimonial-items {
+       box-shadow: 0 0 2px  2px rgba(0, 0, 0, 0.107);
+        height: 40%;
+    }
+
     .testimonial-items img {
-        height: 80%;
-        min-width: 80px;
+        height: 70%;
+        min-width: 100px;
         object-fit: cover;
         box-shadow: 0 0 5px 0px black;
         border-radius: 0 !important;
