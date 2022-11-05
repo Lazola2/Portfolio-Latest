@@ -103,7 +103,7 @@
 			<div
 				class="about-container container my-auto d-flex flex-column d-md-grid justify-content-center align-items-center">
 				<div class="img-container bg-dark d-none d-md-block">
-					<img src="https://i.postimg.cc/tgqfk7f8/download-1.jpg" class="h-100 w-100 " alt="Lazola Makubalo">
+					<img loading="lazy" src="https://i.postimg.cc/tgqfk7f8/download-1.jpg" class="h-100 w-100 " alt="Lazola Makubalo">
 				</div>
 				<div
 					class="about-content py-md-4 px-md-5 d-flex flex-column justify-content-between align-items-md-start align-items-center gap-md-4 gap-3">
@@ -325,98 +325,65 @@
 		</section>
 
 		<!-- projects section -->
-		<section class="projects w-100 h-100 d-flex align-items-center justify-content-center" id="projects">
-			<div class="projects-container container d-flex align-items-center justify-content-center flex-column">
-				<h2 class="mb-4 use-theme">Projects</h2>
-				<!-- carousel -->
-				<div class="carousel-container h-75 w-75 d-md-flex ">
-					<!-- project 1 -->
-					<div class="project-1 projects h-100 w-100" id="project-1">
-						<span class="buttons-container">
-							<button class="btn btn-dark rounded-1">
-								<a href="https://github.com/Lazola2/Portfolio-Latest">
-									<i class="bi bi-github me-2"></i>
-									Github
-								</a>
-							</button>
-							<button class="btn btn-danger rounded-1">
-								<a href="https://lazola-portfolio.netlify.app">
-									<i class="bi bi-globe me-2"></i>
-									Live
-								</a>
-							</button>
-						</span>
+		<section class="projects w-100 h-100 d-flex align-items-center justify-content-center position-relative" id="projects">
+			<div class="projects-container bg-white d-flex flex-column position-absolute">
+				<div class="carousel-wrapper  d-flex">
+					<div class="project w-100" id="project-1">
+						<div class="project-links">
+							<a href="https://github.com/Lazola2/Portfolio-Latest.git">
+								<button class="bg-dark text-white">Github</button>
+							</a>
+							<a href="https://lazola-portfolio.netlify.app/">
+								<button class="bg-danger text-white">Live</button>
+							</a>
+						</div>
 					</div>
 
-					<!-- project 2 -->
-					<div class="project-2 projects h-100 w-100" id="project-2">
-						<span class="buttons-container">
-							<button class="btn btn-dark rounded-1">
-								<a href="https://github.com/Lazola2/E-Commerce-Site">
-									<i class="bi bi-github me-2"></i>
-									Github
-								</a>
-							</button>
-							<button class="btn btn-danger rounded-1">
-								<a href="https://lazola-portfolio.netlify.app">
-									<i class="bi bi-globe me-2"></i>
-									Live
-								</a>
-							</button>
-						</span>
+					<div class="project w-100" id="project-2">
+						<div class="project-links">
+							<a href="https://github.com/Lazola2/E-Commerce-Site.git">
+								<button class="bg-dark text-white">Github</button>
+							</a>
+							<a href="https://lazola-ecommerce.netlify.app">
+								<button class="bg-danger text-white">Live</button>
+							</a>
+						</div>
 					</div>
 
-					<!-- project 3 -->
-					<div class="project-3 projects h-100 w-100" id="project-3">
-						<span class="buttons-container">
-							<button class="btn btn-dark rounded-1">
-								<a href="https://github.com/Lazola2/LCDashboard">
-									<i class="bi bi-github me-2"></i>
-									Github
-								</a>
-							</button>
-							<button class="btn btn-danger rounded-1">
-								<a href="https://lazola-portfolio.netlify.app">
-									<i class="bi bi-globe me-2"></i>
-									Live
-								</a>
-							</button>
-						</span>
+					<div class="project w-100" id="project-3">
+						<div class="project-links">
+							<a href="https://github.com/Lazola2/LCDashboard.git">
+								<button class="bg-dark text-white">Github</button>
+							</a>
+							<a href="https://lcdashboard.netlify.app">
+								<button class="bg-danger text-white">Live</button>
+							</a>
+						</div>
+					</div>	
+					<div class="project w-100" id="project-4">
+						<div class="project-links">
+							<a href="https://github.com/Lazola2/Portfolio-Mobile_version_skeleton.git">
+								<button class="bg-dark text-white">Github</button>
+							</a>
+							<a href="https://lazola-mobile-portfolio.netlify.app">
+								<button class="bg-danger text-white">Live</button>
+							</a>
+						</div>
 					</div>
-
-					<!-- project 4 -->
-					<div class="project-4 projects h-100 w-100" id="project-4">
-						<span class="buttons-container">
-							<button class="btn btn-dark rounded-1">
-								<a href="https://github.com/Lazola2/Portfolio-Mobile_version_skeleton">
-									<i class="bi bi-github me-2"></i>
-									Github
-								</a>
-							</button>
-							<button class="btn btn-danger rounded-1">
-								<a href="https://lazola-mobile-portfolio.netlify.app/">
-									<i class="bi bi-globe me-2"></i>
-									Live
-								</a>
-							</button>
-						</span>
-					</div>
-
 				</div>
 
-				<!-- carousel buttons -->
-				<div class="button-container mt-3 w-50">
-					<a href="project-1">
-						<button class="buttons project-1-btn rounded-circle"></button>
+				<div class="buttons-wrapper d-flex align-items-center list-unstyled justify-content-center gap-3 w-100">
+					<a href="#project-1">
+						<li class="navigator-btn"></li>
 					</a>
 					<a href="#project-2">
-						<button class="buttons project-2-btn rounded-circle"></button>
+						<li class="navigator-btn"></li>
 					</a>
 					<a href="#project-3">
-						<button class="buttons project-3-btn rounded-circle"></button>
+						<li class="navigator-btn"></li>
 					</a>
 					<a href="#project-4">
-						<button class="buttons project-4-btn rounded-circle"></button>
+						<li class="navigator-btn"></li>
 					</a>
 				</div>
 			</div>
@@ -430,7 +397,7 @@
 				<!-- item 1 -->
 				<h3 class="testimonial-heading text-center use-theme">Testimonials</h3>
 				<div class="testimonial-items item-1 col-md-6">
-					<img src="https://i.postimg.cc/fbbYTnNr/Asandile.jpg" alt="Asandile Langeni"> 
+					<img loading="lazy"  src="https://i.postimg.cc/fbbYTnNr/Asandile.jpg" alt="Asandile Langeni"> 
 					<div class="content">
 						<h6>Asandile Langeni</h6>
 						<p>
@@ -443,7 +410,7 @@
 				
 				<!-- item 2 -->
 				<div class="testimonial-items item-2 col-md-6">
-					<img src="https://i.postimg.cc/0QwnPRGq/Matthew.jpg" alt="Matthew Thomas">
+					<img loading="lazy"  src="https://i.postimg.cc/0QwnPRGq/Matthew.jpg" alt="Matthew Thomas">
 					
 					<div class="content">
 						<h6>Matthew Thomas</h6>
@@ -456,7 +423,7 @@
 				
 				<!-- item 3 -->
 				<div class="testimonial-items item-3 col-md-6">
-					<img src="https://i.postimg.cc/Kz8bHftL/Sakhe.jpg" alt="Sakhe Mzolisa">
+					<img loading="lazy"  src="https://i.postimg.cc/Kz8bHftL/Sakhe.jpg" alt="Sakhe Mzolisa">
 					<div class="content">
 						<h6>Sakhe Mzolisa</h6>
 						<p>
@@ -468,7 +435,7 @@
 				
 				<!-- item 4 -->
 				<div class="testimonial-items item-4 col-md-6">
-					<img  src="https://i.postimg.cc/kgn3YwQc/Lindokuhle.jpg" alt="Lindokuhle Mgoqi">
+					<img  loading="lazy" src="https://i.postimg.cc/kgn3YwQc/Lindokuhle.jpg" alt="Lindokuhle Mgoqi">
 					<div class="content">
 						<h6>Lindokuhle Mgoqi</h6>
 						<p>
@@ -480,7 +447,7 @@
 				
 				<!-- item 5 -->
 				<div class="testimonial-items item-5 col-md-6">
-					<img src="" alt="">
+					<img loading="lazy" src="https://i.postimg.cc/DwRqG00W/IMG-20221105-090125.jpg" alt="Seth Kallis">
 					<div class="content">
 						<h6>Seth Kallis</h6>
 						<p>
@@ -491,7 +458,7 @@
 				
 				<!-- item 6 -->
 				<div class="testimonial-items item-6 col-md-6">
-					<img src="" alt="">
+					<img loading="lazy" src="" alt="">
 					<div class="content">
 						<h6>Candice Amon</h6>
 						<p>

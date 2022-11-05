@@ -8,7 +8,7 @@
     color: var(--theme-color);
 }
 
-.use-theme{
+.use-theme {
     color: var(--theme-color);
 }
 
@@ -25,6 +25,10 @@
     transition: 1s ease-in-out;
 }
 
+header {
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
 body {
     background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)),
         url(https://i.postimg.cc/bY1kMd7T/image.png);
@@ -38,7 +42,8 @@ header {
     height: 9vh;
 }
 
-header, .navbar {
+header,
+.navbar {
     z-index: 20000;
 }
 
@@ -64,7 +69,7 @@ header, .navbar {
 .logo {
     color: var(--theme-color);
     font-size: 30px;
-    font-weight: 600;   /*try to use bootstrap on this one*/
+    font-weight: 600;
     border: 1px solid var(--theme-color);
     animation: rotate 4s;
     -o-animation: rotate 4s;
@@ -79,7 +84,7 @@ header, .navbar {
 
 .socials li {
     color: var(--text-color);
-    font-size: larger; /*try to use bootstrap on this one*/
+    font-size: larger;
 }
 
 .socials li:hover {
@@ -87,8 +92,8 @@ header, .navbar {
 }
 
 .home-page {
-    height: 100%; /*try to use bootstrap on this one*/
-    width: 100%; /*try to use bootstrap on this one*/
+    height: 100%;
+    width: 100%;
 }
 
 a,
@@ -138,12 +143,12 @@ li.line {
 .home-buttons .download-btn {
     width: 170px;
     height: 38px;
-    background: none; /*try to use bootstrap on this one*/
+    background: none;
 }
 
 .home-buttons .download-btn {
     background-color: var(--theme-color);
-    border: none; /*try to use bootstrap on this one*/
+    border: none;
 }
 
 .home-buttons .contact-btn {
@@ -153,7 +158,7 @@ li.line {
 
 .home-buttons .contact-btn:hover {
     background-color: var(--hover-btn-color);
-    border: none; 
+    border: none;
     color: #000;
 }
 
@@ -184,7 +189,7 @@ li.line {
     height: 20%;
     width: 30%;
     background-color: var(--theme-color);
-    position: absolute; /*try to use bootstrap on this one*/
+    position: absolute;
     right: -5px;
     top: -5px;
     z-index: -1;
@@ -195,7 +200,7 @@ li.line {
     height: 20%;
     width: 30%;
     background-color: var(--theme-color);
-    position: absolute; /*try to use bootstrap on this one*/
+    position: absolute;
     left: -5px;
     bottom: -5px;
     z-index: -1;
@@ -207,7 +212,7 @@ li.line {
 }
 
 .contacts {
-    font-size: smaller;  /*try to use bootstrap on this one*/
+    font-size: smaller;
     margin-bottom: 1em;
 }
 
@@ -221,7 +226,8 @@ li.line {
     background-color: rgba(255, 255, 255, .8);
     width: 60%;
     height: 70%;
-    position: relative; /*try to use bootstrap on this one*/
+    position: relative;
+    
 }
 
 .resume-subheading {
@@ -229,26 +235,25 @@ li.line {
 }
 
 .resume-container h2 {
-    color: black; /*try to use bootstrap on this one*/
+    color: black;
     font-weight: 100;
 }
 
 .education-grid .blocks {
-    position: relative; /*try to use bootstrap on this one*/
+    position: relative;
 }
 
 .education-grid .blocks::after {
-    content:'';
+    content: '';
     height: 80%;
     background: var(--theme-color);
-    /* box-shadow: 0 0 2px 5px #000; */
     width: 5px;
     position: absolute;
     left: 15%;
 }
 
 .education-grid .blocks::before {
-    content:'';
+    content: '';
     height: 20px;
     top: 0%;
     background: var(--theme-color);
@@ -294,104 +299,83 @@ li.line {
 }
 
 /* styling the projects section */
-.projects-container {     
+.projects-container {
     background-color: rgba(255, 255, 255, .8);
     width: 60%;
     height: 75%;
     display: flex;
     flex-direction: column;
+    scroll-margin: initial;
 }
 
-.projects-container .button-container {     
-    width: 60%;
-    height: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 5%;
-}
-
-.projects-container .button-container .buttons{     
-    background-color: rgba(39, 38, 38, 0.8);
-    width: 20px;
-    height: 20px;
-    border: none;
-}
-
-.projects-container .carousel-container {
+.carousel-wrapper {
+    height: 85%;
     overflow: auto;
-    transition: .3s;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    position: relative;
-    box-shadow: 0 0 5px 0px black;
 }
 
-.projects-container .carousel-container .projects {
+.carousel-wrapper .project {
     min-width: 100%;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    z-index: 1;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;
+}
+
+.buttons-wrapper {
+    height: 15%;
+}
+
+.navigator-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: gray;
+}
+
+.project-links {
+    margin-bottom: 10px;
+}
+
+.project-links button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
 }
 
 /* project 1 */
-.carousel-container .project-1{
-    background:
-         
-        url(https://i.postimg.cc/7Yg0kH8N/Project-1.png);
+.carousel-wrapper #project-1 {
+    background: url(https://i.postimg.cc/7Yg0kH8N/Project-1.png);
     background-size: cover;
     background-position: center;
 }
 
 /* project 2 */
-.carousel-container .project-2{
-    background:
-     
-        url(https://i.postimg.cc/R0XFcTNW/Project-2.png);
+.carousel-wrapper #project-2 {
+    background: url(https://i.postimg.cc/R0XFcTNW/Project-2.png);
     background-size: cover;
     background-position: center;
 }
 
 /* project 3 */
-.carousel-container .project-3{
+.carousel-wrapper #project-3 {
     background:
-        linear-gradient(to top, rgba(0,0,0,.7) ,rgba(0,0,0,.4)), 
+        linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, .4)),
         url(https://i.postimg.cc/3w9D1vtc/Project-3.png);
     background-size: cover;
     background-position: 0%;
 }
 
 /* project 4 */
-.carousel-container .project-4{
+.carousel-wrapper #project-4 {
     background:
-        linear-gradient(to top, rgba(0,0,0,.9),rgba(0,0,0,.4)), 
+        linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .4)),
         url(https://i.postimg.cc/DZNrnGkM/Project-4.png);
     background-size: cover;
-}
-
-.projects .buttons-container {
-    display: block;
-    height: 40px;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.projects .buttons-container a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.projects .buttons-container button {
-    height: 80%;
-    font-size: 17px;
-    width: 150px;
-    line-height: 0;
-    font-weight: 600;
-    border-radius: 0px;
 }
 
 /* styling the contact section */
@@ -421,7 +405,7 @@ textarea {
     max-height: 60vh;
 }
 
-.contact-container h2{
+.contact-container h2 {
     font-weight: 100;
     font-size: small;
 }
@@ -457,20 +441,6 @@ textarea {
     font-size: 13px;
     width: 80%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes rotate {
     0% {
@@ -516,12 +486,17 @@ textarea {
         margin-top: 2rem;
     }
 
-    .contact-container form label{
+    .contact-container form label {
         margin-top: 10px;
     }
 
-    .contact-container form button{
+    .contact-container form button {
         margin: 20px 0;
+    }
+
+    /* styling the projects container */
+    .projects-container {
+        width: 100% !important;
     }
 
     /* styling the testimonial section */
@@ -534,7 +509,7 @@ textarea {
     }
 
     .testimonial-items {
-       box-shadow: 0 0 2px  2px rgba(0, 0, 0, 0.107);
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.107);
         height: 40%;
     }
 
@@ -545,7 +520,7 @@ textarea {
         box-shadow: 0 0 5px 0px black;
         border-radius: 0 !important;
     }
-        
+
     .testimonial-items .content p {
         font-size: 12px;
         width: 100%;
@@ -567,6 +542,10 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        background: none;
+    }
+
     /* styling the resume section */
     .navigation {
         background: rgba(0, 0, 0);
@@ -576,8 +555,9 @@ textarea {
         position: relative;
     }
 
-    .blocks::after, .blocks::before {
-      display: none;
+    .blocks::after,
+    .blocks::before {
+        display: none;
     }
 
     .resume-container {
@@ -601,16 +581,16 @@ textarea {
     }
 
     /* projects section */
-    .projects-container {     
+    .projects-container {
         background-color: rgba(255, 255, 255, .8);
-        width: 100% !important;
+        width: 90% !important;
         height: 75%;
         display: flex;
         flex-direction: column;
         padding: 0;
     }
 
-    .projects-container .carousel-container {     
+    .projects-container .carousel-container {
         background-color: rgba(255, 255, 255, .8);
         width: 100% !important;
         height: 100% !important;
@@ -621,6 +601,7 @@ textarea {
     .carousel-container .projects-container {
         height: 100% !important;
     }
+
 
     /* styling the contact section */
     .contact-container {
@@ -636,19 +617,20 @@ textarea {
         margin-top: 2rem;
     }
 
-    .contact-container form label{
+    .contact-container form label {
         margin-top: 10px;
     }
 
-    .contact-container form button{
+    .contact-container form button {
         margin: 20px 0;
     }
 
     /* styling the testimonials section */
-    
+
 }
 
 @media screen and (max-width: 500px) {
+
     /* styling the home page */
     .content-container {
         margin: 0 auto;
@@ -708,7 +690,7 @@ textarea {
         margin-bottom: 5px;
     }
 
-    .contact-item i{
+    .contact-item i {
         margin-right: 10px;
     }
 
@@ -745,7 +727,7 @@ textarea {
         overflow-y: auto;
         padding: 20px 10px;
         gap: 15px;
-        background-color: rgba(255, 255, 255,0);
+        background-color: rgba(255, 255, 255, 0);
         position: static;
     }
 
@@ -760,7 +742,7 @@ textarea {
         font-weight: 300;
     }
 
-    .education-grid{
+    .education-grid {
         gap: 20px;
     }
 
@@ -782,8 +764,9 @@ textarea {
         list-style: none;
     }
 
-    .blocks::after, .blocks::before{
-        display:none;
+    .blocks::after,
+    .blocks::before {
+        display: none;
     }
 
     /* styling the skills section for mobile devices */
@@ -795,7 +778,7 @@ textarea {
         flex-direction: column;
         overflow-y: auto;
         padding: 0px !important;
-    }  
+    }
 
     .progress {
         margin: 1rem 0;
@@ -816,10 +799,11 @@ textarea {
     .language {
         margin: 0;
     }
-   
+
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+
     /* Projects */
     #projects .carousel-container {
         display: flex;
@@ -837,13 +821,13 @@ textarea {
         object-fit: cover;
     }
 
-    .carousel-container .projects{
+    .carousel-container .projects {
         background-position: 0;
     }
 
     .buttons-container {
         width: 70% !important;
     }
-    
+
 
 }
