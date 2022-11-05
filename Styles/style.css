@@ -38,7 +38,7 @@ header {
     height: 9vh;
 }
 
-.navbar {
+header, .navbar {
     z-index: 20000;
 }
 
@@ -544,10 +544,32 @@ textarea {
         font-size: 12px;
         width: 100%;
     }
+
+    footer {
+        box-sizing: border-box;
+        height: 40px;
+        flex-direction: column;
+    }
+
+    footer p {
+        position: relative;
+        top: 15px;
+        width: 45%;
+        left: 55%;
+        color: rgba(0, 0, 0, 0.208);
+    }
 }
 
 @media screen and (max-width: 768px) {
     /* styling the resume section */
+    .navigation {
+        background: rgba(0, 0, 0);
+        width: 100% !important;
+        padding: 20px 0;
+        display: flex;
+        position: relative;
+    }
+
     .blocks::after, .blocks::before {
       display: none;
     }
@@ -622,11 +644,6 @@ textarea {
 
 @media screen and (max-width: 500px) {
     /* styling the home page */
-    .navigation {
-        background: rgba(0, 0, 0);
-        width: 100% !important;
-    }
-
     .content-container {
         margin: 0 auto;
         width: 90% !important;
