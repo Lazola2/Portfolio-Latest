@@ -15,6 +15,7 @@
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
 		crossorigin="anonymous"></script>
+	<script defer src="JS/code.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
 		integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
 	<link rel="stylesheet" href="Styles/style.css">
@@ -35,13 +36,13 @@
 				</button>
 				<div class="collapse navbar-collapse navigation" id="navbarNav">
 					<ul class="navbar-nav ms-auto w-50 d-flex justify-content-between me-5">
-						<li class="py-2"><a class="active" href="#home-page">Home</a></li>
-						<li class="py-2"><a href="#about-section">About</a></li>
-						<li class="py-2"><a href="#resume">Resume</a></li>
-						<li class="py-2"><a href="#skills">Skills</a></li>
-						<li class="py-2"><a href="#projects">Projects</a></li>
-						<li class="py-2"><a href="#testimonials">Testimonials</a></li>
-						<li class="py-2"><a href="#contact">Contact</a></li>
+						<li class="nav-links py-2"><a class="active" href="#home-page">Home</a></li>
+						<li class="nav-links py-2"><a class="inactive" href="#about-section">About</a></li>
+						<li class="nav-links py-2"><a class="inactive" href="#resume">Resume</a></li>
+						<li class="nav-links py-2"><a class="inactive" href="#skills">Skills</a></li>
+						<li class="nav-links py-2"><a class="inactive" href="#projects">Projects</a></li>
+						<li class="nav-links py-2"><a class="inactive" href="#testimonials">Testimonials</a></li>
+						<li class="nav-links py-2"><a class="inactive" href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -103,7 +104,8 @@
 			<div
 				class="about-container container my-auto d-flex flex-column d-md-grid justify-content-center align-items-center">
 				<div class="img-container bg-dark d-none d-md-block">
-					<img loading="lazy" src="https://i.postimg.cc/tgqfk7f8/download-1.jpg" class="h-100 w-100 " alt="Lazola Makubalo">
+					<img loading="lazy" src="https://i.postimg.cc/tgqfk7f8/download-1.jpg" class="h-100 w-100 "
+						alt="Lazola Makubalo">
 				</div>
 				<div
 					class="about-content py-md-4 px-md-5 d-flex flex-column justify-content-between align-items-md-start align-items-center gap-md-4 gap-3">
@@ -325,7 +327,8 @@
 		</section>
 
 		<!-- projects section -->
-		<section class="projects w-100 h-100 d-flex align-items-center justify-content-center position-relative" id="projects">
+		<section class="projects w-100 h-100 d-flex align-items-center justify-content-center position-relative"
+			id="projects">
 			<div class="projects-container bg-white d-flex flex-column position-absolute">
 				<div class="carousel-wrapper  d-flex">
 					<div class="project w-100" id="project-1">
@@ -359,7 +362,7 @@
 								<button class="bg-danger text-white">Live</button>
 							</a>
 						</div>
-					</div>	
+					</div>
 					<div class="project w-100" id="project-4">
 						<div class="project-links">
 							<a href="https://github.com/Lazola2/Portfolio-Mobile_version_skeleton.git">
@@ -390,79 +393,82 @@
 		</section>
 
 		<!-- testimonials section -->
-		<section class="testimonials w-100 h-100 d-flex align-items-center justify-content-center"
-			id="testimonials">
-			<div class="testimonials-container h-75 w-75 bg-white align-items-center justify-content-center row gap-md-0 gap-4">
+		<section class="testimonials w-100 h-100 d-flex align-items-center justify-content-center" id="testimonials">
+			<div
+				class="testimonials-container h-75 w-75 bg-white align-items-center justify-content-center row gap-md-0 gap-4">
 
 				<!-- item 1 -->
 				<h3 class="testimonial-heading text-center use-theme">Testimonials</h3>
 				<div class="testimonial-items item-1 col-md-6">
-					<img loading="lazy"  src="https://i.postimg.cc/fbbYTnNr/Asandile.jpg" alt="Asandile Langeni"> 
+					<img loading="lazy" src="https://i.postimg.cc/fbbYTnNr/Asandile.jpg" alt="Asandile Langeni">
 					<div class="content">
 						<h6>Asandile Langeni</h6>
 						<p>
 							Lazola is a down to earth person who is always keen to do extra for other people.
-							He is a wonderful developer, always finds new ways to improve himself and is resourceful to 
+							He is a wonderful developer, always finds new ways to improve himself and is resourceful to
 							others as well.
 						</p>
-					</div>  
+					</div>
 				</div>
-				
+
 				<!-- item 2 -->
 				<div class="testimonial-items item-2 col-md-6">
-					<img loading="lazy"  src="https://i.postimg.cc/0QwnPRGq/Matthew.jpg" alt="Matthew Thomas">
-					
+					<img loading="lazy" src="https://i.postimg.cc/0QwnPRGq/Matthew.jpg" alt="Matthew Thomas">
+
 					<div class="content">
 						<h6>Matthew Thomas</h6>
 						<p>
 							Lazola in my personal opinion is a hard worker. Always willing to help his peers /
-							 colleagues with their work. He is able to work fluidly and in an environment with different projects. 
-						</p>
-					</div> 
-				</div>
-				
-				<!-- item 3 -->
-				<div class="testimonial-items item-3 col-md-6">
-					<img loading="lazy"  src="https://i.postimg.cc/Kz8bHftL/Sakhe.jpg" alt="Sakhe Mzolisa">
-					<div class="content">
-						<h6>Sakhe Mzolisa</h6>
-						<p>
-							Lazola is always willing to assist and is exceptionally gifted in coding. A rare gem in for 
-							any team with exceptional leadership skills. 
+							colleagues with their work. He is able to work fluidly and in an environment with different
+							projects.
 						</p>
 					</div>
 				</div>
-				
+
+				<!-- item 3 -->
+				<div class="testimonial-items item-3 col-md-6">
+					<img loading="lazy" src="https://i.postimg.cc/Kz8bHftL/Sakhe.jpg" alt="Sakhe Mzolisa">
+					<div class="content">
+						<h6>Sakhe Mzolisa</h6>
+						<p>
+							Lazola is always willing to assist and is exceptionally gifted in coding. A rare gem in for
+							any team with exceptional leadership skills.
+						</p>
+					</div>
+				</div>
+
 				<!-- item 4 -->
 				<div class="testimonial-items item-4 col-md-6">
-					<img  loading="lazy" src="https://i.postimg.cc/kgn3YwQc/Lindokuhle.jpg" alt="Lindokuhle Mgoqi">
+					<img loading="lazy" src="https://i.postimg.cc/kgn3YwQc/Lindokuhle.jpg" alt="Lindokuhle Mgoqi">
 					<div class="content">
 						<h6>Lindokuhle Mgoqi</h6>
 						<p>
-							Lazola is a very determined individual who is eager to learn more and always lends a helping hand.
+							Lazola is a very determined individual who is eager to learn more and always lends a helping
+							hand.
 							He has such a humble personality an a big heart.
 						</p>
-					</div> 
+					</div>
 				</div>
-				
+
 				<!-- item 5 -->
 				<div class="testimonial-items item-5 col-md-6">
 					<img loading="lazy" src="https://i.postimg.cc/DwRqG00W/IMG-20221105-090125.jpg" alt="Seth Kallis">
 					<div class="content">
 						<h6>Seth Kallis</h6>
 						<p>
-							Lazola has what appears to be a natural aptitude for coding/programming. 
+							Lazola has what appears to be a natural aptitude for coding/programming.
 						</p>
-					</div> 
+					</div>
 				</div>
-				
+
 				<!-- item 6 -->
 				<div class="testimonial-items item-6 col-md-6">
 					<img loading="lazy" src="https://i.postimg.cc/TP7tcqsY/Candice.jpg" alt="Candice Amon">
 					<div class="content">
 						<h6>Candice Amon</h6>
 						<p>
-							He is a good observer. He understand his strengths very well and knows when to put it to good use. 
+							He is a good observer. He understand his strengths very well and knows when to put it to
+							good use.
 							He is not afraid to ask for help when needed and also knows his boundaries.
 						</p>
 					</div>
@@ -471,11 +477,10 @@
 		</section>
 
 		<!-- contact section -->
-		<section class="contact-section w-100 h-100 d-flex align-items-center justify-content-center"
-			id="contact">
+		<section class="contact-section w-100 h-100 d-flex align-items-center justify-content-center" id="contact">
 			<div class="contact-container rounded-1 bg-white p-4">
 				<h2 class="text-center use-theme fs-1">Contact Me</h2>
-				<form	action="https://formspree.io/f/xyyvbajz" method="POST" 
+				<form action="https://formspree.io/f/xyyvbajz" method="POST"
 					class="contact-form w-100 d-flex flex-column d-flex justify-content-center gap-md-3 my-md-4 px-md-3">
 					<!-- name -->
 					<div class="form-group">
@@ -486,7 +491,8 @@
 					<!-- surname -->
 					<div class="form-group">
 						<label for="surname">Surname</label>
-						<input type="text" class="form-control" id="surname" name="surname" placeholder="eg.  Bruce" required>
+						<input type="text" class="form-control" id="surname" name="surname" placeholder="eg.  Bruce"
+							required>
 					</div>
 
 					<!-- email -->
@@ -501,7 +507,8 @@
 					<!-- message -->
 					<div class="form-group">
 						<label for="exampleInputEmail1">Message</label>
-						<textarea name="message" id="message" class="form-control" rows="3" placeholder="message..." required></textarea>
+						<textarea name="message" id="message" class="form-control" rows="3" placeholder="message..."
+							required></textarea>
 					</div>
 
 					<button type="submit" class="btn btn-send-form">Send</button>

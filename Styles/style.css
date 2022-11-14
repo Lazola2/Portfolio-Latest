@@ -9,7 +9,7 @@
 }
 
 .use-theme {
-    color: var(--theme-color);
+    color: var(--theme-color) !important;
 }
 
 .bg-use-theme {
